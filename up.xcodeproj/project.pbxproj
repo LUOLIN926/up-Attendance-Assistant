@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3E3AAF012EDF3F7900CD8E32 /* upUITests.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E3AAEFA2EDF3F7900CD8E32 /* upUITests.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E3AAEFF2EDF3F7900CD8E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E3AAED32EDF1DDF00CD8E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E3AAEF92EDF3F7900CD8E32;
+			remoteInfo = upUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E3AAF062EDF3F7900CD8E32 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E3AAF012EDF3F7900CD8E32 /* upUITests.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3E3AAEDB2EDF1DDF00CD8E32 /* up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = up.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3AAEFA2EDF3F7900CD8E32 /* upUITests.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = upUITests.appex; path = upUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -20,6 +49,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E3AAED82EDF1DDF00CD8E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3AAEF72EDF3F7900CD8E32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				3E3AAEDB2EDF1DDF00CD8E32 /* up.app */,
+				3E3AAEFA2EDF3F7900CD8E32 /* upUITests.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +92,12 @@
 				3E3AAED72EDF1DDF00CD8E32 /* Sources */,
 				3E3AAED82EDF1DDF00CD8E32 /* Frameworks */,
 				3E3AAED92EDF1DDF00CD8E32 /* Resources */,
+				3E3AAF062EDF3F7900CD8E32 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3E3AAF002EDF3F7900CD8E32 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3E3AAEDD2EDF1DDF00CD8E32 /* up */,
@@ -69,6 +108,25 @@
 			productName = up;
 			productReference = 3E3AAEDB2EDF1DDF00CD8E32 /* up.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3E3AAEF92EDF3F7900CD8E32 /* upUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3AAF032EDF3F7900CD8E32 /* Build configuration list for PBXNativeTarget "upUITests" */;
+			buildPhases = (
+				3E3AAEF62EDF3F7900CD8E32 /* Sources */,
+				3E3AAEF72EDF3F7900CD8E32 /* Frameworks */,
+				3E3AAEF82EDF3F7900CD8E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = upUITests;
+			packageProductDependencies = (
+			);
+			productName = upUITests;
+			productReference = 3E3AAEFA2EDF3F7900CD8E32 /* upUITests.appex */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +139,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					3E3AAEDA2EDF1DDF00CD8E32 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					3E3AAEF92EDF3F7900CD8E32 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -100,12 +161,20 @@
 			projectRoot = "";
 			targets = (
 				3E3AAEDA2EDF1DDF00CD8E32 /* up */,
+				3E3AAEF92EDF3F7900CD8E32 /* upUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3E3AAED92EDF1DDF00CD8E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3AAEF82EDF3F7900CD8E32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E3AAEF62EDF3F7900CD8E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E3AAF002EDF3F7900CD8E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E3AAEF92EDF3F7900CD8E32 /* upUITests */;
+			targetProxy = 3E3AAEFF2EDF3F7900CD8E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3E3AAEE42EDF1DE000CD8E32 /* Debug */ = {
@@ -256,6 +340,9 @@
 				DEVELOPMENT_TEAM = 66FT687265;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问您的摄像头以扫描二维码";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "此应用需要访问您的位置信息以在地图上显示当前位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "此应用需要访问您的位置信息以在地图上显示当前位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +375,9 @@
 				DEVELOPMENT_TEAM = 66FT687265;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问您的摄像头以扫描二维码";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "此应用需要访问您的位置信息以在地图上显示当前位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "此应用需要访问您的位置信息以在地图上显示当前位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +393,60 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E3AAF042EDF3F7900CD8E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FT687265;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = upUITests;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = loctionTest.up.upUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E3AAF052EDF3F7900CD8E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FT687265;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = upUITests;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = loctionTest.up.upUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +471,15 @@
 			buildConfigurations = (
 				3E3AAEE72EDF1DE000CD8E32 /* Debug */,
 				3E3AAEE82EDF1DE000CD8E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3AAF032EDF3F7900CD8E32 /* Build configuration list for PBXNativeTarget "upUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3AAF042EDF3F7900CD8E32 /* Debug */,
+				3E3AAF052EDF3F7900CD8E32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
