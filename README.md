@@ -59,6 +59,36 @@
 3. 连接iOS设备或使用模拟器
 4. 编译并运行应用
 
+## 使用GPX文件模拟定位
+
+本项目包含了多个GPX文件，可用于在Xcode中模拟不同的地理位置：
+
+1. [loction_gdut_J1J2.gpx](up/gpx/loction_gdut_J1J2.gpx) - J1J2教学楼位置
+2. [loction_gdut_J3J4.gpx](up/gpx/loction_gdut_J3J4.gpx) - J3J4教学楼位置
+3. [loction_gdut_J5J6.gpx](up/gpx/loction_gdut_J5J6.gpx) - J5J6教学楼位置
+
+### 在Xcode中使用GPX文件模拟定位：
+
+1. 在Xcode中运行您的应用
+2. 打开调试导航器（Debug Navigator）
+3. 点击位置模拟按钮（Simulate Location）
+4. 选择所需的GPX文件或自定义位置
+
+### 创建自定义GPX文件：
+
+您可以创建自己的GPX文件来模拟特定位置：
+
+1. 在Xcode中右键点击[gpx](up/gpx/)文件夹
+2. 选择"New File"
+3. 选择"GPX File"模板
+4. 输入文件名
+5. 修改文件中的经纬度坐标以设置所需位置
+
+## 屏幕截图
+
+![主界面](screenshots/main.png)
+*应用主界面显示*
+
 ## 开源许可
 
 本项目采用MIT许可证，详情请参阅[LICENSE](LICENSE)文件。
@@ -67,4 +97,4 @@
 
 罗霖 - luolin_0926@icloud.com
 
-项目地址：[https://github.com/luolin0926/up](https://github.com/luolin0926/up)
+项目地址：[https://github.com/LUOLIN926/up-Attendance-Assistant](https://github.com/LUOLIN926/up-Attendance-Assistant)
