@@ -49,19 +49,21 @@
 1. 一台运行 macOS 的 Mac 电脑（建议 macOS 10.15 Catalina 或更高版本）
 2. Xcode 开发环境（可从 Mac App Store 免费下载）
 3. 一部 iPhone 设备（用于实际测试，也可使用 Xcode 内置模拟器）
-4. Apple 开发者账号（免费账号即可，但如需在真机上运行则需要配置相关证书）
-5. 获取签到链接，在 [`ContentView.swift`](up/ContentView.swift) 文件中替换（默认跳转微信小程序"群报数"）
+4. 一根用于连接 Mac 与 iPhone 的数据线
+5. Apple 开发者账号（免费账号即可）
+6. 获取签到链接，在 [`ContentView.swift`](up/ContentView.swift) 文件中替换（默认跳转微信小程序"群报数"）
 
 ### 运行步骤
 
 1. 克隆本仓库到本地
 2. 使用Xcode打开项目文件([up.xcodeproj](up.xcodeproj))
-3. 连接iOS设备或使用模拟器
-4. 编译并运行应用
+3. 用数据线连接 Mac 与 iPhone
+4. 在 iPhone 上开启开发者模式，点击信任你的 Mac
+5. 编译并运行应用（选择运行位置为你的iPhone）
 
 ## 使用GPX文件模拟定位
 
-本项目包含了多个GPX文件，可用于在Xcode中模拟不同的地理位置：
+本项目包含了多个GPX文件，可用于在Xcode中模拟不同的地理位置（示例地点为广东工业大学）：
 
 1. [loction_gdut_J1J2.gpx](up/gpx/loction_gdut_J1J2.gpx) - J1J2教学楼位置
 2. [loction_gdut_J3J4.gpx](up/gpx/loction_gdut_J3J4.gpx) - J3J4教学楼位置
